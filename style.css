@@ -58,23 +58,28 @@ body
 
 #answers {
   align-content: flex-start;
+  font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+#aboutText {
+	font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 /* Dividers */
 
-.divider {								/* minor cosmetics */
+.divider {								
 	display: table; 
 	font-size: 24px; 
 	text-align: center; 
-	width: 75%; 						/* divider width */
-	margin: 40px auto;					/* spacing above/below */
+	width: 75%; 						
+	margin: 40px auto;					
 }
 .divider span { display: table-cell; position: relative; }
 .divider span:first-child, .divider span:last-child {
 	width: 50%;
-	top: 13px;							/* adjust vertical align */
-	-moz-background-size: 100% 2px; 	/* line width */
-	background-size: 100% 2px; 			/* line width */
+	top: 13px;							
+	-moz-background-size: 100% 2px; 	
+	background-size: 100% 2px; 			
 	background-position: 0 0, 0 100%;
 	background-repeat: no-repeat;
 }

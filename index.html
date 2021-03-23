@@ -3,6 +3,7 @@
 
 <head>
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="utf-8">
 </head>
 
 <body>
@@ -138,7 +139,16 @@
         Subject:<br>
         <input type="text" name="subject"><br>
         Message:<br>
-        <textarea name="body" rows="12" cols="35"></textarea><br><br><br><br>
+        <div id="form-message">
+          <textarea name="body" rows="12" cols="35" id="body"></textarea>
+          <select name="emojis" id="emojis">
+            <option value="&#128077">&#128077</option>
+            <option value="&#128078">&#128078</option>
+            <option value="&#128151">&#128151</option>
+            
+          </select>
+        </div>
+        <br><br><br><br>
         <input type="submit" value="Send">
         <input type="reset" value="Reset">
         </form>
@@ -159,6 +169,17 @@
       $('#menu').toggle($(this).scrollTop() > 1000)
     });
   </script>
+  <script>
+    // var chosenEmoji = 'Text';
+    // $('#emojis').change(function() {
+    //     if($('#emojis').val()=='1'){
+    //       $('#body').html(chosenEmoji);
+    //     } else {
+    //       $('#body').html("");
+    //     }
+    // });
+  </script>
+  
 </body>
 
 </html>

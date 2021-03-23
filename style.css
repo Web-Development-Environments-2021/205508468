@@ -12,11 +12,11 @@ body
 
 #menu
 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 	overflow: hidden;
 	position: fixed;
 	width: 100%;
@@ -63,6 +63,13 @@ body
 
 #aboutText {
 	font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+#form-message{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
 }
 
 /* Dividers */

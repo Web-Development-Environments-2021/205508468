@@ -127,7 +127,6 @@
         <br/>
         <b>Web3:</b> האתר יהיה חכם, ויכלול  תצוגה תלת מימדית של התוכן, שיתוף מידע בין אנשים וחיבור לצורך קניה ומכירה.
     </p>
-    
   </section>
 
   <section id="contact" class="section">
@@ -141,21 +140,35 @@
         Message:<br>
         <div id="form-message">
           <textarea name="body" rows="12" cols="35" id="body"></textarea>
-          <select name="emojis" id="emojis">
+          <select id="emojis" onchange="appendEmoji()">
             <option value="&#128077">&#128077</option>
             <option value="&#128078">&#128078</option>
             <option value="&#128151">&#128151</option>
-            
+            <option value="&#128512">&#128512</option>
+            <option value="&#128514">&#128514</option>
+            <option value="&#128517">&#128517</option>
+            <option value="&#128520">&#128520</option>
+            <option value="&#128521">&#128521</option>
+            <option value="&#128523">&#128523</option>
+            <option value="&#128525">&#128525</option>
+            <option value="&#128526">&#128526</option>
           </select>
         </div>
-        <br><br><br><br>
+        <br><br><br>
         <input type="submit" value="Send">
         <input type="reset" value="Reset">
         </form>
     </div>
   </section>
 
-
+  <script type="text/javascript">
+    function appendEmoji() {
+      var emojis = document.getElementById("emojis");
+      var chosenEmoji = emojis.value;
+      var textBox = document.getElementById("body");
+      textBox.value += chosenEmoji;
+    }
+  </script>
   <script type="text/javascript">
     $(function () {
       $("#nav a").click(function (e) {
@@ -169,16 +182,7 @@
       $('#menu').toggle($(this).scrollTop() > 1000)
     });
   </script>
-  <script>
-    // var chosenEmoji = 'Text';
-    // $('#emojis').change(function() {
-    //     if($('#emojis').val()=='1'){
-    //       $('#body').html(chosenEmoji);
-    //     } else {
-    //       $('#body').html("");
-    //     }
-    // });
-  </script>
+  
   
 </body>
 

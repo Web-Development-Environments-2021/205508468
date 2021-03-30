@@ -1,13 +1,11 @@
 body
 {
-	/* background: grey;  */
   background-image: linear-gradient(to right, grey,white);
 }
 
 #logo {
   width: 80px;
   height: 60px;
-
 }
 
 #menu
@@ -35,15 +33,11 @@ body
 
 .menuItem
 {
-	/* float: right; */
-	/* display: block; */
 	color: burlywood;
-  /* color: rgba(0,0,0,0.5) */
 	text-align: center;
 	padding: 14px 16px;
-  text-decoration: none;
-  font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-  
+	text-decoration: none;
+	font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 .menuItem:hover
@@ -56,10 +50,16 @@ body
 	text-align: center;
 }
 
-#answers {
-  align-content: flex-start;
+.answers {
   font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  text-align: right;
 }
+
+#answersBlock {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
 
 #aboutText {
 	font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
@@ -110,14 +110,9 @@ body
 
 
 /* Photo Gallery */
-/* The grid: Four equal columns that floats next to each other */
 #gallery{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-
-
-
-  /* Contact Me Section */
